@@ -9,8 +9,7 @@ setup(
         "streamlit",
         "pandas",
         "numpy",
-        "plotly",
-        "subprocess"  # Note: 'subprocess' is part of the standard library in Python 3, so it doesn't need to be installed separately.
+        "plotly" 
     ],
     author="Sebastien Caron",
     description="Projet dans le cadre de la maitrise",
