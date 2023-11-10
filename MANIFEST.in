@@ -1,0 +1,6 @@
+include README.md
+recursive-include outilsTravailB/data2D
+recursive-include outilsTravailB/data3D
+recursive-include outilsTravailB/rawData
+
+
