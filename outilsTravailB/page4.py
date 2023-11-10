@@ -6,9 +6,9 @@ import plotly.graph_objs as go
 import os
 
 # Set your path
-
+dir_path = os.path.dirname(os.path.realpath(__file__))
 chemin_relatif = "data2D/"
-path = os.path.join(os.getcwd(), chemin_relatif)
+path = os.path.join(dir_path, chemin_relatif)
 
 @st.cache
 def load_data(year):

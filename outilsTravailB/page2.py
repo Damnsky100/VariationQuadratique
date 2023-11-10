@@ -9,8 +9,10 @@ import os
 st.title("3D Quadratic Variation Analysis")
 
 
+# Set your path
+dir_path = os.path.dirname(os.path.realpath(__file__))
 chemin_relatif = "data3D/"
-path = os.path.join(os.getcwd(), chemin_relatif)
+path = os.path.join(dir_path, chemin_relatif)
 
 
 # Load and clean data

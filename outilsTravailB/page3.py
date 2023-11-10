@@ -8,9 +8,10 @@ import os
 # Setup Streamlit widgets to accept user input
 st.title("Quadratic Variation Decompositions")
 
-chemin_relatif = "data2D/"
-path = os.path.join(os.getcwd(), chemin_relatif)
 # Set your path
+dir_path = os.path.dirname(os.path.realpath(__file__))
+chemin_relatif = "data2D/"
+path = os.path.join(dir_path, chemin_relatif)
 
 
 # Load and clean data

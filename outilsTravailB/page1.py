@@ -6,8 +6,10 @@ from plotly.subplots import make_subplots
 import functions as f  # Ensure this module contains the necessary functions
 import os
 
+# Set your path
+dir_path = os.path.dirname(os.path.realpath(__file__))
 chemin_relatif = "data2D/"
-path = os.path.join(os.getcwd(), chemin_relatif)
+path = os.path.join(dir_path, chemin_relatif)
 # Setup Streamlit widgets to accept user input
 st.title("Quadratic Variation and Closing Price Analysis")
 
