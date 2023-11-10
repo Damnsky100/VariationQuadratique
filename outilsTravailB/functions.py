@@ -79,7 +79,12 @@ def runApp():
     # streamlit run app.py
     # app.py
     # Define the pages
-    pages = {
+    
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    app_path = os.path.join(dir_path, 'app.py')
+    subprocess.run(["streamlit", "run", app_path])
+    
+    """pages = {
         "Quadratic Variation Analysis": "page1",
         "3D Analysis": "page2",
         "Quadratic Variation - Decomposition" : "page3",
@@ -95,4 +100,4 @@ def runApp():
     page = pages[selection]
     with open(page + ".py") as f:
         code = compile(f.read(), page + ".py", 'exec')
-        exec(code, {'__name__':'__main__'})
+        exec(code, {'__name__':'__main__'})"""
